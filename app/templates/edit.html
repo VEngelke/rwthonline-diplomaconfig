@@ -1,0 +1,148 @@
+	<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+	<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='css/all.css') }}">
+
+	<script src="{{ url_for('static', filename='jquery.js')}}"></script>
+	<script src="{{ url_for('static', filename='bootstrap-treeview.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='edit.js')}}"></script>
+
+
+
+	{% macro tree(n) -%}
+	{
+	   text: "{{n.name}}",
+	   credits: "{{n.credits}}",
+	   table: [{%for row in n.recordTable%}{%for item in row%}{%if item == true%}true,{% else %}false,{% endif %}{% endfor %}{% endfor %}],
+	   {% if n.childNodes %}nodes :[
+	   {% for child in n.childNodes %}
+	   {{tree(child)}}
+	   {% endfor %}
+	   ],
+	   {% endif%}
+	   
+	},{% endmacro %}
+
+
+	<script type="text/javascript">
+		window.onload= pageLoaded;
+	</script>
+
+
+	<style type="text/css">
+	.myOverflow{
+		overflow-y: auto;
+	}
+
+	.main{
+		height:-webkit-calc(100vh - 100px);
+	}
+
+	.sixty{
+		height:60%;
+	}
+
+	.forty{
+		height:40%;
+	}
+
+	.navcolor{
+		background-color:#279fdb; 
+	}
+
+	.hundred{
+		height:100%;
+	}
+
+	.auto{
+		height:auto%;
+	}
+		
+	</style>
+
+		<title>List</title>
+	</head>
+	<body>
+
+<nav class="navbar navcolor">
+    <button type="button" onclick="saveButton()" class="btn btn-light">Save</button>
+    <button type="button" onclick="copy()" class="btn btn-light">Copy</button>
+    <button type="button" onclick="paste()" class="btn btn-light">Paste</button>
+
+    <button type="button" onclick="finishButton()" class="btn btn-light ml-auto">Finish</button>
+
+    <form class="form-inline ml-auto">
+        <select onchange="setPreview()" class="custom-select" id="docSelector">
+            <option selected value="0">ABS</option>
+            <option value="1">LN</option>
+            <option value="2">PLABS</option>
+            <option value="3">PLTOR</option>
+            <option value="4">TOR</option>
+        </select>
+    </form>
+</nav>
+
+
+<div class="main">
+    <div class="container-fluid hundred">
+        <div class="row hundred">
+            <div class="col hundred">
+                <div id="tree" class="myOverflow sixty"></div>
+                <script type="text/javascript">
+                var c = [
+                     {{ tree(node)}}
+                     ]
+
+
+
+                $('#tree').treeview({ data: c });
+                $('#tree').on('nodeSelected', function(event, data) {
+                    console.log(event);
+                    console.log(data);
+                    setTable(data);
+                });
+                </script>
+                <div class="col auto">
+                    <table id="recordTable" class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Anzeige</th>
+                                <th scope="col">Credits</th>
+                                <th scope="col">Note</th>
+                                <th scope="col">Semester</th>
+                                <th scope="col">Thema</th>
+                                <th scope="col">Titel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {%for row in table%}
+                            <tr>
+                                {% set outer_loop=loop %}
+                                <th scope="row">{{lab[loop.index-1]}}</th>
+                                {%for item in row%}
+                                <td> <input type="checkbox" id="{{outer_loop.index*6+loop.index-7}}" onclick="checkboxClicked(this)"></td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col myOverflow hundred" id="previewField">
+                Laoreet non curabitur gravida arcu ac. Urna id volutpat lacus laoreet non. Dui vivamus arcu felis bibendum ut tristique. Risus nullam eget felis eget. Mauris augue neque gravida in fermentum. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Neque laoreet suspendisse interdum consectetur libero. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Vitae proin sagittis nisl rhoncus mattis rhoncus. Mi proin sed libero enim sed faucibus turpis in. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Placerat vestibulum lectus mauris ultrices eros in cursus turpis. Lacus sed turpis tincidunt id aliquet. Metus dictum at tempor commodo. In cursus turpis massa tincidunt. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Velit euismod in pellentesque massa placerat duis ultricies.
+                Laoreet non curabitur gravida arcu ac. Urna id volutpat lacus laoreet non. Dui vivamus arcu felis bibendum ut tristique. Risus nullam eget felis eget. Mauris augue neque gravida in fermentum. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Neque laoreet suspendisse interdum consectetur libero. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Vitae proin sagittis nisl rhoncus mattis rhoncus. Mi proin sed libero enim sed faucibus turpis in. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Placerat vestibulum lectus mauris ultrices eros in cursus turpis. Lacus sed turpis tincidunt id aliquet. Metus dictum at tempor commodo. In cursus turpis massa tincidunt. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Velit euismod in pellentesque massa placerat duis ultricies.
+            </div>
+        </div>
+    </div>
+</div>
+	</body>
+
+
+
+
+
+	</html>
+

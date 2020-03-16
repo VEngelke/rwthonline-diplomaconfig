@@ -1,0 +1,481 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- PAGEID:7032850 KurzBez:SPOM -->
+<HTML id="id-page-spom" class="fwk-co app-stpvw">
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><META HTTP-EQUIV="pragma" CONTENT="no-cache"><META NAME="Author" CONTENT="RWTH Aachen University">
+
+<title>SPO-Management - Q-System - RWTHonline - Rheinisch-Westfälische Technische Hochschule Aachen</title>
+<link rel="shortcut icon" href="/qrwth/img/co_favicon_rwthprod.ico?20160510162509">
+<STYLE type="text/css">
+  A { text-decoration:underline;} 
+  BODY { font-size:14px;background-image:url(/qrwth/img/background_qsystem_coger.gif?20191001143629);} 
+</STYLE>
+<link rel="stylesheet" type="text/css" href="/qrwth/css/system_standard.css?20191003150310">
+<style media="screen" type="text/css">
+
+</style> <style media="screen, projection" type="text/css">   .CSS2380703123 { margin-left: 20px; } </style> <link rel="stylesheet" type="text/css" href="/qrwth/css/custom_standard.css?20190515093358">
+
+<script type="text/javascript">
+ <!-- 
+ var GLOBALhomeUrl = "qs-online.rwth-aachen.de";
+ var GLOBALhomeIndicator = "<img src='/qrwth/img/co_logo_m_coger.png?20160907114710' BORDER=0 />";
+var GLOBALLOVSucheArr = new Array();
+//-->
+</script>
+</head>
+<body onLoad="if( parent && parent.menue ) { if ( parent.menue.stopReload == undefined ) { parent.menue.location.reload(); if (parent && parent.parent && parent.parent.tree ) {parent.parent.tree.toggleSlider('J'); };};}; if ( parent && window && parent != window ) { var vTitle ='QSY '; if( parent && parent.detail && parent.detail.document.title ) { vTitle = vTitle.concat(parent.detail.document.title.replace(/[\n\r\x22\']|^\s*/g, '')); parent.document.title = vTitle; } else { if( parent && parent.frames[0] && parent.frames[0].document.title ) {vTitle = vTitle.concat(parent.frames[0].document.title.replace(/[\n\r\x22\']|^\s*/g, '')); parent.document.title = vTitle; } } }"  >
+
+<div class="pageDisabled" id="idPageDisabled">
+</div>
+<div class="pageLoading" id="idPageLoader">
+Loading
+</div>
+<script charset="WINDOWS-1252" type="text/javascript">
+
+  if(window.addEventListener) window.addEventListener("load", function(){ $("idPageDisabled").style.display = "none"; $("idPageLoader").style.display = "none";}, false);
+  else {  document.attachEvent("onreadystatechange", function(){ if(document.readyState == "complete") { $("idPageDisabled").style.display = "none"; $("idPageLoader").style.display = "none"; }  }, false);  }
+
+</script>
+<div id="pageContent">
+<div class="coTooltip" id="GLOBALcoTooltip"></div>
+<table  align="center" width="100%" id="idTopPageHeader" class="bodyTable" cellspacing="0" cellpadding="0">
+<tr valign="middle" class="middle coHeaderTopRow">
+<td nowrap="nowrap" class="pageOwner"><span class="s">&nbsp;</span></td>
+<td class="wr100" width="100%" >&nbsp;</td>
+<td>&nbsp;</td>
+<td></td>
+<TD>
+<script src="/qrwth/js/wosinddieframes.jsa?20110309140158" type="text/javascript" charset="WINDOWS-1252"></script>
+</TD>
+</tr>
+</table>
+<table  align="center"  width="100%" id="idPageHeader" class="pageObjectNoTopBorder" cellspacing="0" cellpadding="0">
+<tr align="left" valign="top">
+<TD  valign="middle" style="padding:10px;width:50%;" >
+<table   width="100%" >
+<tr valign="top">
+<td  WIDTH="100%"><h1 class="headerHeading noMargin">SPO-Management</h1></td>
+</tr>
+</table>
+</TD>
+</tr>
+</table>
+<div class="invisible" id="idMsgLayerClosed">
+<a href="#" class=" nounderline" id="idToolUnClose" onclick="try{CO.msg.unClose(); return(false);}catch(e){return($E(e));}"><img alt="Meldungen anzeigen" height="24" src="/qrwth/img/msg_maximize.png?20120703121114" width="24"></a><a href="#" class=" nounderline" onclick="try{CO.msg.clear(true); return(false);}catch(e){return($E(e));}"><img alt="Meldungsfenster schlie&szlig;en" height="24" src="/qrwth/img/msg_close.png?20120703121111" width="24"></a></div>
+<div id="idMsgLayer">
+<div class="toolbar" id="idToolbar">
+<span class="toolbarSummary invisible" id="idToolbarSummary"><a href="#" class="invisible  nounderline" id="idToolFatalSummary" onclick="try{CO.msg.focus($$(&quot;.msgFatal&quot;)[0]); return(false);}catch(e){return($E(e));}"><img alt="Fatale Fehler" height="21" src="/qrwth/img/msg_fatal_small.gif?20080423172608" width="21"></a><a href="#" class="invisible  nounderline" id="idToolErrorSummary" onclick="try{CO.msg.focus($$(&quot;.msgError&quot;)[0]); return(false);}catch(e){return($E(e));}"><img alt="Fehler" height="21" src="/qrwth/img/msg_error_small.gif?20080423172607" width="21"></a><a href="#" class="invisible  nounderline" id="idToolWarningSummary" onclick="try{CO.msg.focus($$(&quot;.msgWarning&quot;)[0]); return(false);}catch(e){return($E(e));}"><img alt="Warnungen" height="21" src="/qrwth/img/msg_warning_small.gif?20080423172614" width="21"></a><a href="#" class="invisible  nounderline" id="idToolInfoSummary" onclick="try{CO.msg.focus($$(&quot;.msgInfo&quot;)[0]); return(false);}catch(e){return($E(e));}"><img alt="Informationen" height="21" src="/qrwth/img/msg_info_small.gif?20080423172610" width="23"></a></span><a href="#" class=" nounderline" onclick="try{CO.msg.close(); return(false);}catch(e){return($E(e));}"><img alt="Wichtigste Meldungen anzeigen" height="24" src="/qrwth/img/msg_minimize.png?20120703121115" width="24"></a><a href="#" class="invisible  nounderline" id="idToolMinimize" onclick="try{CO.msg.showMinimized(); return(false);}catch(e){return($E(e));}"><img alt="Wichtigste Meldungen anzeigen" height="24" src="/qrwth/img/msg_diminish.png?20120703121112" width="24"></a><a href="#" class="invisible  nounderline" id="idToolMaximize" onclick="try{CO.msg.showMaximized(); return(false);}catch(e){return($E(e));}"><img alt="Alle Meldungen anzeigen" height="24" src="/qrwth/img/msg_maximize.png?20120703121114" width="24"></a><a href="#" class=" nounderline" onclick="try{CO.msg.clear(true); return(false);}catch(e){return($E(e));}"><img alt="Meldungsfenster schlie&szlig;en" height="24" src="/qrwth/img/msg_close.png?20120703121111" width="24"></a></div>
+<div class="msgs">
+<ul class="msgFatal">
+<li>
+</li>
+</ul>
+<ul class="msgError">
+<li>
+</li>
+</ul>
+<ul class="msgWarning">
+<li>
+</li>
+</ul>
+<ul class="msgInfo">
+<li>
+</li>
+</ul>
+</div>
+</div>
+<script charset="WINDOWS-1252" type="text/javascript">//<![CDATA[
+document.getElementById("idMsgLayer").style.display = "none";
+//]]>
+</script><div id="idErrorBox">
+</div>
+<form action="" enctype="" method="POST" name="Mask2380703111" onsubmit="try{return CO.Mask.submitHandler(this);}catch(e){return($E(e));}" id="Mask2380703111">
+<div class="MaskBackground">
+<div class=" MaskContent">
+<table class="coBB">
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT invisible"></td><td class=" coBBBRIGHT invisible coBB"></td><td></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBTOP invisible"></td><td colspan="2" rowspan="2" class="coBBContent"><div class=" MaskData">
+<table>
+<tr>
+<td colspan="1" class=" MaskRenderer top"><fieldset class=" MaskS MaskSCT " id="spo-vorl-elements">
+<table class=" MaskSpacing">
+<tr>
+<td colspan="1" class=" MaskRenderer top"><div class=" MaskS MaskSCT ">
+<table cellspacing="0" class="coTableNavi">
+<tr>
+<td class="nowrap">Index: <select onchange="try{CO.Table.goTo($(&quot;spo-vorl-elements-table&quot;), this.value.split(&quot;#&quot;)[0], this.value.split(&quot;#&quot;)[1]);}catch(e){return($E(e));}" size="1" id="spo-vorl-elements-tableSel"><option value="1#coTblIdx_spo-vorl-elements-table_1">
+Bachelor Lehramt an Berufskollegs</option>
+<option value="1#coTblIdx_spo-vorl-elements-table_4">
+Bachelor Lehramt an Gymnasien und Gesamtschulen</option>
+<option value="1#coTblIdx_spo-vorl-elements-table_6">
+Bachelor 1 Fach</option>
+<option value="2#coTblIdx_spo-vorl-elements-table_13">
+Bachelor 2 Fach</option>
+<option value="2#coTblIdx_spo-vorl-elements-table_16">
+LA Master Berufskollegs (berufsbegleitend)</option>
+<option value="2#coTblIdx_spo-vorl-elements-table_17">
+Lehramt an Berufskollegs</option>
+<option value="2#coTblIdx_spo-vorl-elements-table_18">
+Master Lehramt an Berufskollegs</option>
+<option value="3#coTblIdx_spo-vorl-elements-table_21">
+Master Lehramt an Gymnasien u. Gesamtschulen</option>
+<option value="3#coTblIdx_spo-vorl-elements-table_23">
+Master 1 Fach</option>
+<option value="3#coTblIdx_spo-vorl-elements-table_26">
+Master 2 Fächer</option>
+<option value="3#coTblIdx_spo-vorl-elements-table_28">
+Promotion</option>
+</select></td><td class="coTableNaviPageSelect nowrap"><a href="wbSPOMeta.wbSPOs?pOrgNr=14153&amp;pPageNr=3&amp;pSort=&amp;pFilter=null%3Ff_4_10%3Dinformatik" onclick="try{CO.Table.goTo($(&quot;spo-vorl-elements-table&quot;), 3); return(false);}catch(e){return($E(e));}"><img alt="eine Seite zur&uuml;ck" height="20" src="/qrwth/img/arrprev_rwthprod.png?20170703162111" width="20"></a>Seite 
+<select name="pPageNr" onchange="try{CO.Table.goTo($(&quot;spo-vorl-elements-table&quot;), this.value); return(false);}catch(e){return($E(e));}" size="1"><option value="1">
+1</option>
+<option value="2">
+2</option>
+<option value="3">
+3</option>
+<option selected  value="4">
+4</option>
+</select> von 4
+<img alt="" height="20" src="/qrwth/img/arrnextgrey_rwthprod.png?20170703162049" width="20"></td></tr>
+</table>
+<table cellspacing="0" class="cotable" id="spo-vorl-elements-table">
+<thead>
+<tr>
+<th colspan="4" class=" L" id="idCOTH2380703130">
+<div>
+<span>Studien- und Prüfungsordnung</span><span><span class="headerToolSpacer ">&nbsp;</span></span><span><a href="#" class="headerTool  nounderline" id="idFilterA2380703132" onclick="try{return(false);}catch(e){return($E(e));}" title="ungefiltert, klick um Filter anzuzeigen"><img alt="" height="14" src="/qrwth/img/tableheader_filter_inactive.gif?20101116145336" width="14"></a></span></div>
+</th>
+</tr>
+<tr>
+<th colspan="1" class=" L" id="idCOTH2380703133">
+<div>
+<span>Name der SPO-Version</span><span><span class="headerToolSpacer ">&nbsp;</span></span><span><a href="#" class="headerTool  nounderline" id="idFilterA2380703135" onclick="try{return(false);}catch(e){return($E(e));}" title="gefiltert, klick um Filter anzuzeigen"><img alt="" height="14" src="/qrwth/img/tableheader_filter_active.gif?20101116145333" width="14"></a></span></div>
+</th>
+<th colspan="1" class=" L" id="idCOTH2380703136">
+<div>
+<span>Kennung</span><span><span class="headerToolSpacer ">&nbsp;</span></span><span><a href="#" class="headerTool  nounderline" id="idFilterA2380703138" onclick="try{return(false);}catch(e){return($E(e));}" title="ungefiltert, klick um Filter anzuzeigen"><img alt="" height="14" src="/qrwth/img/tableheader_filter_inactive.gif?20101116145336" width="14"></a></span></div>
+</th>
+<th colspan="1" class=" L">
+Sort. <br/></th>
+<th colspan="1" class=" R">
+Anzahl Knoten</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<th colspan="4" class="ftr">
+&nbsp;
+<span id="idTimer2380703112"></span></th>
+</tr>
+</tfoot>
+<tbody>
+<tr class="coRow coTableGR1   ">
+<td colspan="4" class=" L">Promotion forts.<a name="coTblIdx_spo-vorl-elements-table_31"></a></td></tr>
+<tr class="coRow coTableGR2   ">
+<td colspan="4" class=" L"><div>
+<span><a href="wbSPO.wbShow?pStpStudNr=928&amp;pOrgNr=14153"><img alt="" height="17" src="/qrwth/img/stp_stp.png?20170727152252" width="17" class="middle ">1480 06 759 [PrETITTI] Elektro-, Informationstechn. u Techn.Inf (HG-NRW, Promotionssstudium)</a></span><span> </span><span><img alt="" height="16" src="/qrwth/img/attenzione.png?20110208181431" width="16" class="middle " title="Achtung! Zu dieser SPO gibt es mehrere g&uuml;ltige SPO-Versionen. Eine SPO sollte zu einem Zeitpunkt nur eine g&uuml;ltige SPO-Version besitzen!
+"></span></div>
+<a name="coTblIdx_spo-vorl-elements-table_31"></a></td></tr>
+<tr class="coRow z0 hi coTableR  spo-928 ">
+<td class=" L"><a href="#" name="coTblIdx_spo-vorl-elements-table_31" onblur="try{CO.Table.blurRow(this);}catch(e){return($E(e));}" onfocus="try{CO.Table._focusRow($(&quot;spo-vorl-elements-table&quot;), this);}catch(e){return($E(e));}" class="coTabRA" id="coTblIdx_spo-vorl-elements-table_31" onclick="try{ return(false);}catch(e){return($E(e));}"></a><a href="wbSPO.wbShow?pStpKnotenNr=307235&amp;pOrgNr=14153" class="CSS2380703123 " title="zum Bearbeiten klicken"><span class="KnotenText noBorder kt kt1 TextToolTip " title="[2008] Elektrotechnik/Inforamtinstechnik/Techn.Informatik (SPO-Version)">[2008] Elektrotechnik/Inforamtinstechnik/Techn.Informatik (SPO-Version)</span></a></td><td class=" L">2008</td><td class=" L"></td><td class=" R">1</td></tr>
+</tbody>
+</table>
+<table cellspacing="0" class="coTableNavi">
+<tr>
+<td class="nowrap"></td><td class="coTableNaviPageSelect nowrap"><a href="wbSPOMeta.wbSPOs?pOrgNr=14153&amp;pPageNr=3&amp;pSort=&amp;pFilter=null%3Ff_4_10%3Dinformatik" onclick="try{CO.Table.goTo($(&quot;spo-vorl-elements-table&quot;), 3); return(false);}catch(e){return($E(e));}"><img alt="eine Seite zur&uuml;ck" height="20" src="/qrwth/img/arrprev_rwthprod.png?20170703162111" width="20"></a>Seite 
+<select name="pPageNr" onchange="try{CO.Table.goTo($(&quot;spo-vorl-elements-table&quot;), this.value); return(false);}catch(e){return($E(e));}" size="1"><option value="1">
+1</option>
+<option value="2">
+2</option>
+<option value="3">
+3</option>
+<option selected  value="4">
+4</option>
+</select> von 4
+<img alt="" height="20" src="/qrwth/img/arrnextgrey_rwthprod.png?20170703162049" width="20"></td></tr>
+</table>
+</tr>
+</table>
+</fieldset>
+</td></tr>
+</table>
+</div>
+</td><td class=" coBBRIGHT coBBBTOP invisible"></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBBOTTOM invisible coBB"></td><td class=" coBBRIGHT coBBBBOTTOM invisible coBB"></td></tr>
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT"></td><td class=" coBBBRIGHT coBB"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<button name="pMaskAction" type="submit" value="CANCEL" onclick="try{CO.Window.close(this); return(false);}catch(e){return($E(e));}">Abbrechen/Schließen</button></li>
+</ul>
+</td><td></td></tr>
+</table>
+</div>
+</div>
+</form>
+<br><br />
+<table  id="idPageFooter" class="nomargins pageFooter" width="100%" cellpadding="0" cellspacing="0">
+<tr class="z1"><td class="footerCell"><span class="footer">©2019 Rheinisch-Westfälische Technische Hochschule Aachen. Alle Rechte vorbehalten. </span><span class="footer"> | Q-System - RWTHonline powered by <a href="https://campusonline.tugraz.at" name="courl" onclick="window.open(this.href); return(false);">CAMPUSonline</a>&reg; | <A href="https://wiki-intern.rwth-aachen.de/display/RD" TARGET="cstm__footer_link1" ONCLICK="GLOBALwindow(this.href,this.target,'YES',0);return false;" class="footer">RWTHonline-Dokuportal</A> | <A href="/RWTHonline/webnav.browserInfo?pUrl=webnav.systemstatus" TARGET="cstm__footer_link2" ONCLICK="GLOBALwindow(this.href,this.target,'YES',0);return false;" class="footer">Unterstützte Browser</A> | <A href="https://www.rwth-aachen.de/cms/root/Footer/Services/~bw/Impressum/" TARGET="impressum" ONCLICK="GLOBALwindow(this.href,this.target,'YES',0);return false;" class="footer">Impressum</A> | <A href="mailto:talkback.campusonline%40TUGraz.at" target="emailWin" onclick="GLOBALEmailWindow('', '', 'talkback.campusonline@TUGraz.at', 'Q-System - RWTHonline', 'Anregungen Wuensche Beschwerden', '', '', '', 'OWN');return false;" title="Feedback Q-System - RWTHonline" onMouseover="this.title= 'Nachricht senden an ' +'talkback.campusonline@TUGraz.at'     "  class="footer">Feedback</A></span></td></tr>
+</table>
+</div>
+<div id="idFirebug">
+</div>
+<div class="invisible" id="idWindowTemplate">
+<div class="overlayWindowContent" id="idOverlayWindowContent">
+</div>
+<div class="overlayWindowHeader">
+<div>
+<span class="overlayWindowTools"><a href="#" class=" nounderline" id="idOverlayClose" onclick="try{CO.Window.close(this);return(false);}catch(e){return($E(e));}"><img alt="" height="24" src="/qrwth/img/msg_close.png?20120703121111" width="24"></a></span><h1 class="overlayWindowTitle" id="idOverlayWindowTitle">
+Loading ...
+</h1>
+</div>
+</div>
+</div>
+<div class="invisible" id="idDialog">
+<p id="idDialogTitle">
+</p>
+<p id="idDialogMsg">
+</p>
+<p id="idChoice">
+</p>
+<div id="idDialogButtonBar">
+</div>
+</div>
+<!--
+ ToolTip Overlays begin-->
+<div class="invisible">
+<div class="overlayTTContainer " id="Overlay2380703124">
+<form action="" enctype="" method="POST" name="Mask2380703125" onsubmit="try{return CO.Mask.submitHandler(this);}catch(e){return($E(e));}" id="Mask2380703125">
+<div class="MaskBackground">
+<div class=" MaskContent">
+<table class="coBB">
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT"></td><td class=" coBBBRIGHT coBB"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<a href="#" class="toolButton commandButton " onclick="try{CO.Table.Tools.hide(); return(false);}catch(e){return($E(e));}"><span class="bold ">X</span></a></li>
+</ul>
+</td><td></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBTOP invisible"></td><td colspan="2" rowspan="2" class="coBBContent"><div class=" MaskData">
+<table>
+<tr>
+<td colspan="1" class=" MaskRenderer top"><fieldset class=" MaskS MaskSCT " id="idFilterCT2380703114">
+<legend class="Mask ">
+<span class="Mask">Filtern</span></legend>
+<table class="coBB">
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT invisible"></td><td class=" coBBBRIGHT invisible coBB"></td><td></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBTOP invisible"></td><td colspan="2" rowspan="2" class="coBBContent"><table class=" MaskSpacing">
+<tr>
+<td class=" MaskRenderer  MaskLabel"><label class="Mask ">Name</label></td><td colspan="1" class=" MaskRenderer top"><table class=" MaskSpacing">
+<tr>
+</tr>
+<tr>
+<td class=" MaskRenderer  MaskLabel"><label for="IF2380703116" class="Mask "><span class="coFilterOperator TextToolTip " title="&auml;hnlich (Gro&szlig;-/Kleinschreibungs-unabh&auml;ngig)">&asymp;</span></label></td><td class=" MaskRenderer"><table class=" MaskElement">
+<tr>
+<td class=" MaskRenderer"><input name="f_6_10" size="42" type="text" id="IF2380703116" onkeypress="try{return nE(event);}catch(e){return($E(e));}"></td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td><td class=" coBBRIGHT coBBBTOP invisible"></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBBOTTOM invisible coBB"></td><td class=" coBBRIGHT coBBBBOTTOM invisible coBB"></td></tr>
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<a href="#" class="commandButton " onclick="try{CO.Table.deleteFilter($(&quot;spo-vorl-elements-table&quot;), $(&quot;idFilterCT2380703114&quot;), &quot;null?f_4_10=informatik&quot;); CO.Table.Tools.hide(); return(false);}catch(e){return($E(e));}">Filter aufheben</a></li>
+</ul>
+</td><td class=" coBBBRIGHT coBB"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<a href="#" class="commandButton " id="idFilterCT2380703114Button" onclick="try{CO.Table.filter($(&quot;spo-vorl-elements-table&quot;), $(&quot;idFilterCT2380703114&quot;), &quot;null?f_4_10=informatik&quot;); CO.Table.Tools.hide(); return(false);}catch(e){return($E(e));}">Filtern</a></li>
+</ul>
+</td><td></td></tr>
+</table>
+</fieldset>
+</td></tr>
+</table>
+</div>
+</td><td class=" coBBRIGHT coBBBTOP invisible"></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBBOTTOM invisible coBB"></td><td class=" coBBRIGHT coBBBBOTTOM invisible coBB"></td></tr>
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT invisible"></td><td class=" coBBBRIGHT invisible coBB"></td><td></td></tr>
+</table>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="invisible">
+<div class="overlayTTContainer " id="Overlay2380703126">
+<form action="" enctype="" method="POST" name="Mask2380703127" onsubmit="try{return CO.Mask.submitHandler(this);}catch(e){return($E(e));}" id="Mask2380703127">
+<div class="MaskBackground">
+<div class=" MaskContent">
+<table class="coBB">
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT"></td><td class=" coBBBRIGHT coBB"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<a href="#" class="toolButton commandButton " onclick="try{CO.Table.Tools.hide(); return(false);}catch(e){return($E(e));}"><span class="bold ">X</span></a></li>
+</ul>
+</td><td></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBTOP invisible"></td><td colspan="2" rowspan="2" class="coBBContent"><div class=" MaskData">
+<table>
+<tr>
+<td colspan="1" class=" MaskRenderer top"><fieldset class=" MaskS MaskSCT " id="idFilterCT2380703117">
+<legend class="Mask ">
+<span class="Mask">Filtern</span></legend>
+<table class="coBB">
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT invisible"></td><td class=" coBBBRIGHT invisible coBB"></td><td></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBTOP invisible"></td><td colspan="2" rowspan="2" class="coBBContent"><table class=" MaskSpacing">
+<tr>
+<td class=" MaskRenderer  MaskLabel"><label class="Mask ">Name</label></td><td colspan="1" class=" MaskRenderer top"><table class=" MaskSpacing">
+<tr>
+</tr>
+<tr>
+<td class=" MaskRenderer  MaskLabel"><label for="IF2380703119" class="Mask "><span class="coFilterOperator TextToolTip " title="&auml;hnlich (Gro&szlig;-/Kleinschreibungs-unabh&auml;ngig)">&asymp;</span></label></td><td class=" MaskRenderer"><table class=" MaskElement">
+<tr>
+<td class=" MaskRenderer"><input name="f_4_10" size="42" type="text" value="informatik" id="IF2380703119" onkeypress="try{return nE(event);}catch(e){return($E(e));}"></td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td><td class=" coBBRIGHT coBBBTOP invisible"></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBBOTTOM invisible coBB"></td><td class=" coBBRIGHT coBBBBOTTOM invisible coBB"></td></tr>
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<a href="#" class="commandButton " onclick="try{CO.Table.deleteFilter($(&quot;spo-vorl-elements-table&quot;), $(&quot;idFilterCT2380703117&quot;), &quot;null?f_4_10=informatik&quot;); CO.Table.Tools.hide(); return(false);}catch(e){return($E(e));}">Filter aufheben</a></li>
+</ul>
+</td><td class=" coBBBRIGHT coBB"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<a href="#" class="commandButton " id="idFilterCT2380703117Button" onclick="try{CO.Table.filter($(&quot;spo-vorl-elements-table&quot;), $(&quot;idFilterCT2380703117&quot;), &quot;null?f_4_10=informatik&quot;); CO.Table.Tools.hide(); return(false);}catch(e){return($E(e));}">Filtern</a></li>
+</ul>
+</td><td></td></tr>
+</table>
+</fieldset>
+</td></tr>
+</table>
+</div>
+</td><td class=" coBBRIGHT coBBBTOP invisible"></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBBOTTOM invisible coBB"></td><td class=" coBBRIGHT coBBBBOTTOM invisible coBB"></td></tr>
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT invisible"></td><td class=" coBBBRIGHT invisible coBB"></td><td></td></tr>
+</table>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="invisible">
+<div class="overlayTTContainer " id="Overlay2380703128">
+<form action="" enctype="" method="POST" name="Mask2380703129" onsubmit="try{return CO.Mask.submitHandler(this);}catch(e){return($E(e));}" id="Mask2380703129">
+<div class="MaskBackground">
+<div class=" MaskContent">
+<table class="coBB">
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT"></td><td class=" coBBBRIGHT coBB"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<a href="#" class="toolButton commandButton " onclick="try{CO.Table.Tools.hide(); return(false);}catch(e){return($E(e));}"><span class="bold ">X</span></a></li>
+</ul>
+</td><td></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBTOP invisible"></td><td colspan="2" rowspan="2" class="coBBContent"><div class=" MaskData">
+<table>
+<tr>
+<td colspan="1" class=" MaskRenderer top"><fieldset class=" MaskS MaskSCT " id="idFilterCT2380703120">
+<legend class="Mask ">
+<span class="Mask">Filtern</span></legend>
+<table class="coBB">
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT invisible"></td><td class=" coBBBRIGHT invisible coBB"></td><td></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBTOP invisible"></td><td colspan="2" rowspan="2" class="coBBContent"><table class=" MaskSpacing">
+<tr>
+<td class=" MaskRenderer  MaskLabel"><label class="Mask ">Kennung</label></td><td colspan="1" class=" MaskRenderer top"><table class=" MaskSpacing">
+<tr>
+</tr>
+<tr>
+<td class=" MaskRenderer  MaskLabel"><label for="IF2380703122" class="Mask "><span class="coFilterOperator TextToolTip " title="&auml;hnlich (Gro&szlig;-/Kleinschreibungs-unabh&auml;ngig)">&asymp;</span></label></td><td class=" MaskRenderer"><table class=" MaskElement">
+<tr>
+<td class=" MaskRenderer"><input name="f_2_10" size="42" type="text" id="IF2380703122" onkeypress="try{return nE(event);}catch(e){return($E(e));}"></td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td><td class=" coBBRIGHT coBBBTOP invisible"></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBBOTTOM invisible coBB"></td><td class=" coBBRIGHT coBBBBOTTOM invisible coBB"></td></tr>
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<a href="#" class="commandButton " onclick="try{CO.Table.deleteFilter($(&quot;spo-vorl-elements-table&quot;), $(&quot;idFilterCT2380703120&quot;), &quot;null?f_4_10=informatik&quot;); CO.Table.Tools.hide(); return(false);}catch(e){return($E(e));}">Filter aufheben</a></li>
+</ul>
+</td><td class=" coBBBRIGHT coBB"><ul class="coBB">
+<li class=" coBB  bbModusdefault">
+<a href="#" class="commandButton " id="idFilterCT2380703120Button" onclick="try{CO.Table.filter($(&quot;spo-vorl-elements-table&quot;), $(&quot;idFilterCT2380703120&quot;), &quot;null?f_4_10=informatik&quot;); CO.Table.Tools.hide(); return(false);}catch(e){return($E(e));}">Filtern</a></li>
+</ul>
+</td><td></td></tr>
+</table>
+</fieldset>
+</td></tr>
+</table>
+</div>
+</td><td class=" coBBRIGHT coBBBTOP invisible"></td></tr>
+<tr>
+<td class=" coBBLEFT coBBBBOTTOM invisible coBB"></td><td class=" coBBRIGHT coBBBBOTTOM invisible coBB"></td></tr>
+<tr class="coBB">
+<td></td><td class=" coBBBLEFT invisible"></td><td class=" coBBBRIGHT invisible coBB"></td><td></td></tr>
+</table>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!--
+ ToolTip Overlays end-->
+<div class="invisible" id="ToolTipOverlayCBCT">
+</div>
+<script charset="WINDOWS-1252" src="/qrwth/js/prototype_1_7.js?20131105094301" type="text/javascript"></script><script charset="WINDOWS-1252" type="text/javascript">//<![CDATA[
+if(typeof(CO) === "undefined")
+  var CO = Class.create();
+CO.IMGPATH = "https://qs-online.rwth-aachen.de/qrwth/img/";
+//]]>
+</script><script charset="WINDOWS-1252" src="/qrwth/js/scriptaculous.jsa?20080716163658" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/effects.jsa?20080716163655" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/dragdrop.jsa?20090331142212" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/cojs.jsa?20180214075320" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/cotable.jsa?20170228094637" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/coeffect.jsa?20141103162412" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/comsg.jsa?20150213123308" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/utf8count.jsa?20170201111022" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/system_standard_js.js?20110503154927" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/co_loc_custom_standard_js.js?20110503154920" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/cocallback.jsa?20180523080401" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/comaskjs.jsa?20170517145503" type="text/javascript"></script><script charset="WINDOWS-1252" src="/qrwth/js/wbjsincludes_de.js" type="text/javascript"></script>
+
+<script charset="WINDOWS-1252" type="text/javascript">//<![CDATA[
+ if($("idFilterA2380703132")) $("idFilterA2380703132").observe("click", function(event){ CO.Filter.showFilter($("idCOTH2380703130"), $("Overlay2380703124"), $("idCOTH2380703130")); Event.stop(event);  }) 
+ if($("idFilterA2380703135")) $("idFilterA2380703135").observe("click", function(event){ CO.Filter.showFilter($("idCOTH2380703133"), $("Overlay2380703126"), $("idCOTH2380703133")); Event.stop(event);  }) 
+ if($("idFilterA2380703138")) $("idFilterA2380703138").observe("click", function(event){ CO.Filter.showFilter($("idCOTH2380703136"), $("Overlay2380703128"), $("idCOTH2380703136")); Event.stop(event);  }) 
+if($CO("spo-vorl-elements-table")) $CO("spo-vorl-elements-table").co.mTableUrlJSId = "cb1857971022"; // new
+if($CO("spo-vorl-elements-table")) $CO("spo-vorl-elements-table").co.mPageParamName = "pPageNr"; // new
+if($CO("spo-vorl-elements-table"))  $CO("spo-vorl-elements-table").co.mSortParamName = "pSort"; // new
+if($CO("spo-vorl-elements-table"))  $CO("spo-vorl-elements-table").co.mFilterParamName = "pFilter"; // new
+if($CO("spo-vorl-elements-table"))  $CO("spo-vorl-elements-table").co.mPageNr = "4"; // new
+if($CO("spo-vorl-elements-table")) $CO("spo-vorl-elements-table").co.mCallbackMode = true; // new
+CO.Window.updateOverlayMini();
+if($("spo-vorl-elements-table")) $CO("spo-vorl-elements-table").co.multiple = true;
+CO.Table.init("spo-vorl-elements-table");
+self.coOverLay = function(pId, pComponent, pFixed)
+{
+vTip = new Tip(pId, pComponent ,{ fixed: pFixed });
+};
+CO.observe($("idFilterCT2380703114"), "keydown", {key: Event.KEY_RETURN}, function(event){if($("idFilterCT2380703114Button")){ $("idFilterCT2380703114Button").onclick(); }});
+CO.observe($("idFilterCT2380703117"), "keydown", {key: Event.KEY_RETURN}, function(event){if($("idFilterCT2380703117Button")){ $("idFilterCT2380703117Button").onclick(); }});
+CO.observe($("idFilterCT2380703120"), "keydown", {key: Event.KEY_RETURN}, function(event){if($("idFilterCT2380703120Button")){ $("idFilterCT2380703120Button").onclick(); }});
+CO.urls["cb1857971022"] = function(U){ var vUrl =  new CO.Url("wbSPOMeta.wbSPOs?pOrgNr=14153&pPageNr=4&pSort=&pFilter=null%3Ff_4_10%3Dinformatik") ; return vUrl; }
+//]]>
+</script>
+
+</body>
+</html>

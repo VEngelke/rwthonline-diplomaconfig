@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='list.css') }}">
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='css/all.css') }}">
+
+	<title>List</title>
+
+</head>
+<body>
+
+
+<script type=text/javascript src="{{
+  url_for('static', filename='filter.js') }}">
+ </script>
+
+
+ <script type="text/javascript">
+ 	function goto_login(){
+ 		location.href="/login"
+ 	}
+ 	
+ </script>
+
+
+<div class="searchbar">
+	<button type="button" class="btn btn-primary"  onclick="goto_login()">Download</button>
+  <input id="search" type="text" onkeyup="filter()" placeholder="Search courses.." >    
+</div>
+
+
+
+
+<div id="cardlist" class="row  carddeck" >
+{%for course in courses%}
+<div class="card  m-3" >
+  <div class="card-body">
+    <h5 class="card-title">{{course.name}}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text"><i class="far fa-calendar-alt"></i>  {{course.lastModified.strftime('%d.%m.%Y')}}</p>
+    <a href="/edit/{{loop.index-1}}" class="card-link">Open</a>
+    <a href="#" class="card-link">Delete</a>
+  </div>
+</div>
+{% endfor %}
+</div>
+</body>
+</html>

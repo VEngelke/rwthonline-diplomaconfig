@@ -1,0 +1,70 @@
+
+
+
+<html>
+    <head>
+        <link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+        <style type="text/css">
+            .logincard{
+                padding-top: 300px;
+                margin: 0 auto;
+                width:400px;
+            }
+
+
+            
+            .
+        </style>
+
+
+    </head>
+    <body>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+                {% for message in messages %}
+                <div class="alert alert-danger" role="alert">
+                    {{message}}
+                </div>
+                  
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+
+        <div class="carddeck logincard">
+            <div class="card">
+                <h5 class="card-title" style="padding-left: 20px; padding-top:20px">Sign in (RWTH Online)</h5>
+                <div class="card-body">
+
+                <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+            {% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</div></div>
+            
+        </div>
+
+    
+
+        
+
+    </body>
+</html>
+
+

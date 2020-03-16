@@ -1,0 +1,59 @@
+<html>
+<head>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+<script src="{{ url_for('static', filename='jquery.js')}}"></script>
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+changes={{c|tojson}}
+
+
+
+$(document).ready(function(){
+	console.log(changes)
+	setResults(changes)
+
+	});
+
+
+
+function setResults(ch){
+	var list=document.getElementById('list');
+	res=""
+	col_labels=["ABS","LN","PLABS","PLTOR","TOR"]
+	for (i=0;i<ch.length;i++){
+		res+="<h2>"+ch[i].name+"</h2>"
+		res+="<table  class=\"table\"><thead><tr><th scope=\"col\"></th><th scope=\"col\">Anzeige</th><th scope=\"col\">Credits</th><th scope=\"col\">Note</th><th scope=\"col\">Semester</th><th scope=\"col\">Thema</th><th scope=\"col\">Titel</th></tr></thead><tbody>"
+		for (j=0;j<5;j++){    
+			res+="<tr><th scope=\"row\">"+col_labels[j]+"</th>"
+			for (k=0;k<6;k++){
+				if(ch[i].table[j*6+k]){
+					res+="<td> <input type=\"checkbox\" checked></td>"
+				}
+				else{
+					res+="<td> <input type=\"checkbox\"></td>"
+				}
+			}
+			res+="</tr>"
+		}
+		res+="</tbody></table>"
+
+
+
+
+
+
+
+	}
+	list.innerHTML=res
+
+}
+</script>
+
+<div id="list">test</div>
+
+</body>
+</html>

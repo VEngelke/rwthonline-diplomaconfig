@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="{{ url_for('static', filename='jquery.js')}}"></script>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+
+
+	<title>Select</title>
+
+
+
+<style type="text/css">
+	.searchresults{
+		padding: 30px;
+	}
+</style>
+</head>
+<body>
+
+
+
+<div style="margin: 0 auto;width: 500px;padding: 50px">
+	
+<input type="text" id="nr" >
+<button id="bt" type="button" class="btn btn-primary" >Search</button>
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+	$(function() {
+		$('button#bt').bind('click', function() {
+			var resultsField=document.getElementById('resultsField');resultsField.innerHTML="Searching..."
+
+			$.getJSON('/search',{term: $('input[id="nr"]').val()},
+				function(data){
+					 console.log(data)
+					 if(data=="error"){
+					 	window.location="/login"
+					 }
+					 displayResults(data)
+				})
+		});
+				
+
+
+
+	})
+
+	function displayResults(data){
+		res=data
+		results=""
+		l=res["list"]
+		results+="<div class=\"list-group searchresults\">"
+		for (var i=0;i<l.length;i++){
+			results+="<div class=\"card  m-3 \">"
+			results+="<h5 class=\"card-title\" >"+l[i].title+"</h5>";
+			len=l[i].courses.length;
+			for (var j=0;j<len;j++){
+				results+="<p class=\"card-text \">"
+				results+="<a href=\"/download/"+l[i].courses[j].id+"\" class=\"list-group-item\" >"+l[i].courses[j].name+"</a></p>";
+			}
+			results+="</div>"
+		} 
+		//console.log(data)
+		if(l.length==0){
+			results="No courses found for your search term"
+		}
+		else{
+			results+="</div>"
+		}
+		var resultsField=document.getElementById('resultsField');
+		resultsField.innerHTML=results
+	}
+
+</script>
+
+<div id="resultsField"></div>
+
+</body>
+</html>

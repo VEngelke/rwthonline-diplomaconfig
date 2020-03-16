@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+	<title>List</title>
+
+<script src="{{ url_for('static', filename='jquery.js')}}"></script>
+<script src="{{ url_for('static', filename='bootstrap-treeview.min.js')}}"></script>
+
+
+
+</head>
+<body>
+<div id="tree"></div>
+
+
+<script type="text/javascript">
+  var tree = [
+  {
+    text: "Parent 1",
+    state: {
+      expanded: true
+    },
+    nodes: [
+      {
+        text: "Child 1",
+        nodes: [
+          {
+            text: "Grandchild 1"
+          },
+          {
+            text: "Grandchild 2"
+          }
+        ]
+      },
+      {
+        text: "Child 2"
+      }
+    ]
+  }
+];
+
+
+$('#tree').treeview({data: tree});
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
